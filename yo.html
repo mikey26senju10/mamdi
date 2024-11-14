@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Borealis Theme</title>
+    <style>
+        /* Aurora Borealis Background */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #020024, #090979, #00d4ff);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            color: #e0f7fa;
+            min-height: 100vh;
+        }
+        .main-container {
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 90%;
+            max-width: 500px;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        .main-container h1 {
+            color: #00d4ff;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00d4ff;
+            color: #020024;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #1f51ff;
+            color: white;
+        }
+        #new-section {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 90%;
+            max-width: 500px;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        .content img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin: 10px;
+        }
+        .text-area {
+            flex: 1;
+            padding: 10px;
+            color: #e0f7fa;
+            font-size: 1em;
+        }
+        /* Mobile Responsiveness */
+        @media (max-width: 500px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main container with welcome message -->
+    <div class="main-container">
+        <h1>Aurora Borealis loving girl</h1>
+        <p>Welcome to your personalized aurora borealis-themed website sisso!</p>s.
+        <p>Click below to reveal a hidden section.</p>
+        <button class="button" onclick="showNewSection()">open</button>
+        <p>Feel the calm beauty of it</p>
+    </div>
+
+    <!-- Hidden section with picture and text areas -->
+    <div id="new-section">
+        <div class="content">
+            <div class="text-area">
+                <p>[yo my cute sisso! how are you i wish you are fine and doing well..take care of urself and be happy always and keep being a crazy sisso and be successful in everything]</p>
+            </div>
+            <img src="hehe.jpg" alt="Image 1">
+        </div>
+        <div class="content">
+            <img src="huhu.jpg" alt="Image 2">
+            <div class="text-area">
+                <p>[hehe..hello beautiful and supportive sisso thank you for always staying beside me and making me happy when i needed it and for being the best sis always be like this and ur bro is also here so dont worry just enjoy hehe!!]</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to display the hidden section
+        function showNewSection() {
+            document.getElementById("new-section").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
+ 
